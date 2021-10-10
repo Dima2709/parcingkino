@@ -21,7 +21,7 @@ name = ['name']
 year = []
 year1 = ['year1']
 country = ['country']
-genre = ['genre']
+genre = ['country_genre']
 rating = ['rating']
 count_rating = ['count_rating']
 for i in table:
@@ -48,7 +48,7 @@ for i in year:
 
 with open(f"data.csv", "a", encoding="utf-8") as file:
            writer = csv.writer(file,delimiter=';',lineterminator='\n')
-           table1 = zip(name,year1,country,genre,rating,count_rating)
+           table1 = zip(name,year1,genre,rating,count_rating)
            for row in table1:
                writer.writerow(row)
 
