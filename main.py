@@ -17,13 +17,13 @@ with open("index.html", encoding = "utf-8") as file:
 soup = BeautifulSoup(kin, 'lxml')
 
 table = soup.find(class_= "selection-list").find_all(class_= "desktop-rating-selection-film-item")
-name = []
+name = ['name']
 year = []
-year1 = []
-country = []
-genre = []
-rating = []
-count_rating = []
+year1 = ['year1']
+country = ['country']
+genre = ['genre']
+rating = ['rating']
+count_rating = ['count_rating']
 for i in table:
     table1 = i.find_all(class_="selection-film-item-meta__name")
     name.append(table1[0].text)
