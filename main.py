@@ -51,7 +51,7 @@ for i in year:
     year1.append(i.split()[-1])
 with open(f"data.csv", "a", encoding="utf-8") as file:
            writer = csv.writer(file,delimiter=';',lineterminator='\n')
-           table1 = zip(name,year1,country,rating,count_rating)
+           table1 = zip(name,year1,country,genre,rating,count_rating)
            for row in table1:
                writer.writerow(row)
 
