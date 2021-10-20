@@ -6,8 +6,7 @@ def parcing ():
 
     url = 'https://www.kinopoisk.ru/lists/series-top250/'
     count1 = 0
-    headers = {
-         'accept': '* / *', "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 Safari/537.36" }
+    headers = {'accept': '* / *', "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 Safari/537.36" }
 
     while count1 != 5:
 
@@ -83,5 +82,7 @@ def parcing ():
                            writer.writerow(row)
             count1 += 1
             print(count1, 'Итерация из 5')
+            if count1 == 5:
+                print('Файл готов!')
 
 parcing()
