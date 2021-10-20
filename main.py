@@ -12,6 +12,8 @@ def parcing ():
 
         for k in range(1, 6):
 
+            print(count1, 'Итерация из 5')
+
             if count1 == 0:
 
                 req = requests.get(url, headers)
@@ -81,7 +83,7 @@ def parcing ():
                        for row in table1:
                            writer.writerow(row)
             count1 += 1
-            print(count1, 'Итерация из 5')
+
             if count1 == 5:
                 print('Файл готов!')
 
