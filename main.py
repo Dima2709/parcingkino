@@ -12,7 +12,7 @@ def parcing ():
 
         for k in range(1, 6):
 
-            print(count1, 'Итерация из 5')
+            print(k, 'Итерация из 5')
 
             if count1 == 0:
 
